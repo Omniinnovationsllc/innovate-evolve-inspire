@@ -151,7 +151,7 @@ const Portfolio = () => {
                   </div>
 
                   {/* Metrics */}
-                  <div className="space-y-3">
+                  <div className="space-y-3 max-w-xs">
                     <h4 className="font-semibold text-foreground mb-4">Key Metrics</h4>
                     {Object.entries(project.metrics).map(([key, value], idx) => (
                       <div key={idx} className="glass-morphism p-3 rounded-lg">
@@ -173,6 +173,7 @@ const Portfolio = () => {
           <Button 
             size="lg" 
             className="gradient-primary text-primary-foreground font-semibold px-8 py-4 shadow-glow hover:scale-105 transition-all duration-300"
+            onClick={() => window.location.href = '/portfolio'}
           >
             View All Projects
             <ExternalLink className="ml-2 w-5 h-5" />

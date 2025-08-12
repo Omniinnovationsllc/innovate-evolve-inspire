@@ -62,11 +62,6 @@ const Services = () => {
                     alt={service.title}
                     className="w-full h-48 object-cover rounded-lg opacity-80 group-hover:opacity-100 transition-opacity"
                   />
-                  <div className="absolute top-4 left-4 gradient-primary p-3 rounded-lg shadow-glow">
-                    <div className="text-primary-foreground">
-                      {service.icon}
-                    </div>
-                  </div>
                 </div>
 
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-gradient transition-all">
