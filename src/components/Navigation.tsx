@@ -28,7 +28,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2 hover:scale-105 transition-transform duration-300">
             <div className="gradient-primary p-2 rounded-lg shadow-glow">
               <Sparkles className="w-6 h-6 text-primary-foreground" />
             </div>
@@ -36,7 +36,7 @@ const Navigation = () => {
               <div className="font-black text-xl text-gradient">OMNI</div>
               <div className="text-xs text-muted-foreground font-mono -mt-1">INNOVATIONS</div>
             </div>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
