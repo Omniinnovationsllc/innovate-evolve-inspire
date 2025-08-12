@@ -18,10 +18,10 @@ All colors MUST be HSL.
     --popover: 220 25% 6%;
     --popover-foreground: 210 40% 98%;
 
-    /* Premium blue-violet gradient primary */
-    --primary: 240 100% 70%;
+    /* Premium blue gradient primary */
+    --primary: 210 100% 65%;
     --primary-foreground: 220 27% 4%;
-    --primary-glow: 260 100% 80%;
+    --primary-glow: 200 100% 75%;
 
     --secondary: 220 20% 12%;
     --secondary-foreground: 210 40% 98%;
@@ -29,7 +29,7 @@ All colors MUST be HSL.
     --muted: 220 20% 8%;
     --muted-foreground: 215 15% 65%;
 
-    --accent: 260 100% 70%;
+    --accent: 205 100% 70%;
     --accent-foreground: 220 27% 4%;
 
     --destructive: 0 84.2% 60.2%;
@@ -40,13 +40,13 @@ All colors MUST be HSL.
     --ring: 240 100% 70%;
 
     /* Premium gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(240 100% 70%), hsl(260 100% 80%));
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 65%), hsl(200 100% 75%));
     --gradient-dark: linear-gradient(135deg, hsl(220 27% 4%), hsl(220 25% 6%));
-    --gradient-glow: linear-gradient(135deg, hsl(240 100% 70% / 0.1), hsl(260 100% 80% / 0.1));
+    --gradient-glow: linear-gradient(135deg, hsl(210 100% 65% / 0.1), hsl(200 100% 75% / 0.1));
     
     /* Premium shadows */
-    --shadow-glow: 0 0 40px hsl(240 100% 70% / 0.3);
-    --shadow-premium: 0 20px 60px hsl(240 100% 70% / 0.1);
+    --shadow-glow: 0 0 40px hsl(210 100% 65% / 0.3);
+    --shadow-premium: 0 20px 60px hsl(210 100% 65% / 0.1);
     
     --radius: 0.75rem;
 
@@ -149,8 +149,8 @@ All colors MUST be HSL.
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px hsl(240 100% 70% / 0.3); }
-  50% { box-shadow: 0 0 60px hsl(240 100% 70% / 0.6); }
+  0%, 100% { box-shadow: 0 0 20px hsl(210 100% 65% / 0.3); }
+  50% { box-shadow: 0 0 60px hsl(210 100% 65% / 0.6); }
 }
 
 @keyframes slide-up {

@@ -60,22 +60,18 @@ const About = () => {
 
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p className="text-lg">
-                When Brian Hamm was 15, a profound experience changed how he viewed the world 
-                and his place in it. That moment sparked a 20-year mission to become the best 
-                version possible, fueling dedication to innovation, education, and technology.
+                At 15, a profound experience sparked a 20-year mission to innovate. 
+                This dedication drives technology solutions across industries.
               </p>
               
               <p>
-                Across DOE nuclear sites, startups, and research projects, this experience 
-                has been transformed into practical tools that save time and money. From 
-                radiation safety systems at Hanford to AI-powered platforms, every solution 
-                reflects a commitment to excellence and ethical innovation.
+                From DOE nuclear sites to AI platforms, every solution reflects 
+                commitment to excellence and ethical innovation that saves time and money.
               </p>
 
               <p>
                 <strong className="text-foreground">Omni Innovations LLC</strong> transforms 
-                small to medium businesses into competitive, scalable solutions through 
-                cutting-edge expertise and data-driven results.
+                businesses through cutting-edge expertise and data-driven results.
               </p>
             </div>
 

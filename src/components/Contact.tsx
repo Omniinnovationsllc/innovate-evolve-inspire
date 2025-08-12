@@ -39,7 +39,7 @@ const Contact = () => {
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Let's discuss how we can transform your business with cutting-edge technology solutions
+            Transform your business with cutting-edge technology solutions
           </p>
         </div>
 

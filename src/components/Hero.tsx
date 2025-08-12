@@ -49,9 +49,9 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto mb-12 leading-relaxed">
-            We turn emerging technology into practical solutions that drive{" "}
-            <span className="text-primary font-semibold">real, measurable growth</span>{" "}
-            through data-driven analytics, custom web solutions, and responsible AI integrations.
+            Emerging technology into practical solutions driving{" "}
+            <span className="text-primary font-semibold">measurable growth</span>{" "}
+            through data analytics, custom solutions, and responsible AI.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

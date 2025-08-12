@@ -151,12 +151,12 @@ const Portfolio = () => {
                   </div>
 
                   {/* Metrics */}
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     <h4 className="font-semibold text-foreground mb-4">Key Metrics</h4>
                     {Object.entries(project.metrics).map(([key, value], idx) => (
-                      <div key={idx} className="glass-morphism p-4 rounded-lg">
-                        <div className="text-2xl font-bold text-gradient mb-1">{value}</div>
-                        <div className="text-sm text-muted-foreground capitalize">
+                      <div key={idx} className="glass-morphism p-3 rounded-lg">
+                        <div className="text-xl font-bold text-gradient mb-1">{value}</div>
+                        <div className="text-xs text-muted-foreground capitalize">
                           {key.replace(/([A-Z])/g, ' $1').trim()}
                         </div>
                       </div>

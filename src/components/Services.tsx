@@ -9,7 +9,7 @@ const services = [
   {
     icon: <BarChart3 className="w-8 h-8" />,
     title: "Data-Driven Analytics",
-    description: "Transform massive datasets into actionable insights. We specialize in energy modeling, flow analysis, and performance optimization across multiple industries.",
+    description: "Transform datasets into actionable insights. Energy modeling, flow analysis, and performance optimization.",
     image: analyticsIcon,
     features: ["Energy Optimization", "Performance Tracking", "Custom Reporting", "Predictive Analytics"],
     caseStudy: "California Southern Edison project: Processed 50+ building energy models to optimize state electricity grid performance."
@@ -17,7 +17,7 @@ const services = [
   {
     icon: <Code2 className="w-8 h-8" />,
     title: "Custom Web Solutions",
-    description: "From enterprise applications to e-commerce platforms, we build scalable web solutions that grow with your business.",
+    description: "Enterprise applications to e-commerce platforms - scalable solutions that grow with your business.",
     image: webSolutionsIcon,
     features: ["Full-Stack Development", "E-commerce Platforms", "Custom Interfaces", "API Integration"],
     caseStudy: "RizzCat Clothing: Creating a premium online shopping experience with cutting-edge technology."
@@ -25,7 +25,7 @@ const services = [
   {
     icon: <Brain className="w-8 h-8" />,
     title: "Responsible AI Integration",
-    description: "Harness the power of artificial intelligence with ethical, transparent implementations that deliver measurable results.",
+    description: "Ethical AI implementations with transparent processes delivering measurable results.",
     image: aiIcon,
     features: ["AI Automation", "Natural Language Processing", "Document Analysis", "Intelligent Search"],
     caseStudy: "EasyAiResume.com: AI-powered resume optimization achieving 95% user satisfaction rate."
