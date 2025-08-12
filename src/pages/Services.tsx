@@ -2,7 +2,6 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { BarChart3, Code, Brain, ArrowRight, CheckCircle } from "lucide-react";
-import { useIntersectionObserver } from "@/hooks/useParallax";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -77,7 +76,7 @@ const ServicesPage = () => {
               {services.map((service, index) => (
                 <Card 
                   key={index}
-                  className="group glass-morphism-strong border-primary/20 hover:border-primary/40 transition-all duration-700 hover:scale-105 hover:shadow-premium"
+                  className="group glass-morphism border-primary/20 hover:border-primary/40 transition-all duration-500"
                 >
                   <div className="p-8 lg:p-12">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -124,16 +123,16 @@ const ServicesPage = () => {
               ))}
             </div>
 
-            {/* Enhanced CTA Section */}
+            {/* CTA Section */}
             <div className="text-center mt-20">
-              <Card className="glass-morphism-strong border-primary/20 p-12 hover:scale-105 transition-all duration-500">
+              <Card className="glass-morphism border-primary/20 p-12">
                 <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Business?</h2>
                 <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                   Let's discuss how our expertise can drive your next breakthrough.
                 </p>
                 <Button 
                   size="lg" 
-                  className="gradient-primary text-primary-foreground font-semibold px-8 py-4 shadow-glow hover:scale-105 hover:shadow-premium transition-all duration-300"
+                  className="gradient-primary text-primary-foreground font-semibold px-8 py-4 shadow-glow hover:scale-105 transition-all duration-300"
                 >
                   Start Your Project
                   <ArrowRight className="ml-2 w-5 h-5" />

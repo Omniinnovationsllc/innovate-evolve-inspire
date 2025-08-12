@@ -4,32 +4,23 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
-import { useIntersectionObserver } from "@/hooks/useParallax";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const ContactPage = () => {
-  const [heroRef, isVisible] = useIntersectionObserver({ threshold: 0.1 });
-
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       
       <main className="pt-24">
-        {/* Enhanced Hero Section */}
-        <section className="py-20 relative overflow-hidden" ref={heroRef}>
+        {/* Hero Section */}
+        <section className="py-20 relative overflow-hidden">
           <div className="absolute inset-0 gradient-dark opacity-50" />
           
-          {/* Background decorative elements */}
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-10 -right-32 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
-            <div className="absolute bottom-10 -left-32 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1.5s' }} />
-          </div>
-          
           <div className="relative max-w-7xl mx-auto px-6">
-            <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'animate-reveal' : ''}`}>
+            <div className="text-center mb-16">
               <h1 className="text-5xl md:text-7xl font-black mb-6">
-                Get In <span className="text-gradient animate-gradient">Touch</span>
+                Get In <span className="text-gradient">Touch</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Ready to transform your business? Let's discuss your project and create something extraordinary together.
@@ -42,8 +33,8 @@ const ContactPage = () => {
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid lg:grid-cols-2 gap-12">
-              {/* Enhanced Contact Form */}
-              <Card className="glass-morphism-strong border-primary/20 p-8 hover:scale-105 transition-all duration-500">
+              {/* Contact Form */}
+              <Card className="glass-morphism border-primary/20 p-8">
                 <h2 className="text-2xl font-bold mb-6">Start Your Project</h2>
                 
                 <form className="space-y-6">

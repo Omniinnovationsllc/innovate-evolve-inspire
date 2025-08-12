@@ -2,7 +2,6 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Award, Users, Briefcase, ArrowRight } from "lucide-react";
-import { useIntersectionObserver } from "@/hooks/useParallax";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -79,7 +78,7 @@ const AboutPage = () => {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="glass-morphism-strong p-8 rounded-2xl border border-primary/20 hover:scale-105 transition-all duration-500">
+              <div className="glass-morphism p-8 rounded-2xl border border-primary/20">
                 <h2 className="text-3xl font-bold mb-6 text-gradient">Our Vision</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   We believe technology should ease our lives, not burden them. Our mission is to help fellow SMBs harness the power of modern tech solutions while building a more sustainable, renewable future.
@@ -89,7 +88,7 @@ const AboutPage = () => {
                 </p>
               </div>
               
-              <div className="glass-morphism-strong p-8 rounded-2xl border border-primary/20 hover:scale-105 transition-all duration-500">
+              <div className="glass-morphism p-8 rounded-2xl border border-primary/20">
                 <h2 className="text-3xl font-bold mb-6 text-gradient">Our Partnership</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Founded as a husband and wife LLC, Omni Innovations combines decades of technical expertise with a shared vision for responsible technology implementation.
