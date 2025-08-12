@@ -93,7 +93,6 @@ const About = () => {
             <Button 
               size="lg" 
               className="mt-8 gradient-primary text-primary-foreground font-semibold shadow-glow hover:scale-105 transition-all duration-300"
-              onClick={() => window.location.href = '/about'}
             >
               Our Mission
               <ArrowRight className="ml-2 w-5 h-5" />

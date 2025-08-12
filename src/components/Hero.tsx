@@ -58,7 +58,6 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="group gradient-primary text-primary-foreground font-semibold px-8 py-4 shadow-glow hover:scale-105 transition-all duration-300"
-              onClick={() => window.location.href = '/contact'}
             >
               Start Your Transformation
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -85,7 +84,7 @@ const Hero = () => {
             <div className="text-sm text-muted-foreground">Client Satisfaction</div>
           </div>
           <div className="glass-morphism p-6 rounded-xl">
-            <div className="text-4xl font-bold text-gradient mb-2">∞</div>
+            <div className="text-3xl font-bold text-gradient mb-2">∞</div>
             <div className="text-sm text-muted-foreground">Innovation Potential</div>
           </div>
         </div>
