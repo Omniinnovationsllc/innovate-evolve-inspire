@@ -68,147 +68,134 @@ const AboutPage = () => {
           <div className="absolute inset-0 gradient-dark opacity-50" />
           
           <div className="relative max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h1 className="text-5xl md:text-7xl font-black mb-6">
-                About <span className="text-gradient">Omni Innovations</span>
-              </h1>
-              <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                A husband and wife partnership dedicated to bringing modern technology solutions to small and medium businesses while reshaping tech for a sustainable future.
-              </p>
-            </div>
-
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="glass-morphism p-8 rounded-2xl border border-primary/20">
-                <h2 className="text-3xl font-bold mb-6 text-gradient">Our Vision</h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  We believe technology should ease our lives, not burden them. Our mission is to help fellow SMBs harness the power of modern tech solutions while building a more sustainable, renewable future.
+              <div>
+                <h1 className="text-5xl md:text-7xl font-black mb-6">
+                  About <span className="text-gradient">Brian</span>
+                </h1>
+                <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+                  At 15, I realized life had handed me an incredible opportunity to grow and refine myself into anything. Twenty years later, that mission continues to fuel my passion for innovation, education, and technology.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  As a family business, we're committed to ethical innovation that delivers real, measurable value to our clients and contributes to a better tomorrow.
-                </p>
+                <div className="flex gap-4">
+                  <Button 
+                    size="lg" 
+                    className="gradient-primary text-primary-foreground font-semibold"
+                  >
+                    Download Resume
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    className="border-primary/30 hover:border-primary"
+                  >
+                    LinkedIn Profile
+                  </Button>
+                </div>
               </div>
               
-              <div className="glass-morphism p-8 rounded-2xl border border-primary/20">
-                <h2 className="text-3xl font-bold mb-6 text-gradient">Our Partnership</h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Founded as a husband and wife LLC, Omni Innovations combines decades of technical expertise with a shared vision for responsible technology implementation.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  We leverage cutting-edge expertise in data analytics, AI integration, and custom solutions to transform businesses while maintaining our commitment to transparency and ethical practices.
-                </p>
+              <div className="relative">
+                <div className="glass-morphism p-8 rounded-2xl border border-primary/20">
+                  <h3 className="text-2xl font-bold mb-6">Core Philosophy</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    "Turning emerging technology into practical tools that save time and money. Across DOE nuclear sites, start-ups, and research projects, I've used conviction and commitment to deliver results that matter."
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Expertise Section */}
+        {/* Experience Section */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-black mb-6">
-                Our <span className="text-gradient">Expertise</span>
+                Professional <span className="text-gradient">Experience</span>
               </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Two decades of innovation across DOE nuclear sites, energy research, and cutting-edge technology development.
-              </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
-              <Card className="glass-morphism border-primary/20 p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <Briefcase className="w-8 h-8 text-primary" />
-                  <h3 className="text-2xl font-bold">Technical Leadership</h3>
-                </div>
-                <div className="space-y-4 text-muted-foreground">
-                  <p>Brian brings 20+ years of experience from DOE nuclear sites to cutting-edge AI platforms, with expertise spanning:</p>
-                  <ul className="space-y-2">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                      <span>Data Analytics & AI Integration</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                      <span>Energy Modeling & Grid Optimization</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                      <span>Custom Software Development</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                      <span>Process Automation & Optimization</span>
-                    </li>
-                  </ul>
-                </div>
-              </Card>
-
-              <Card className="glass-morphism border-primary/20 p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <Users className="w-8 h-8 text-primary" />
-                  <h3 className="text-2xl font-bold">Our Impact</h3>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-gradient">15+</div>
-                    <div className="text-sm text-muted-foreground">Major Projects</div>
+            <div className="space-y-8">
+              {experience.map((job, index) => (
+                <Card 
+                  key={index}
+                  className="glass-morphism border-primary/20 hover:border-primary/40 transition-all duration-500"
+                >
+                  <div className="p-8">
+                    <div className="flex items-start gap-4">
+                      <div className="gradient-primary p-3 rounded-lg shadow-glow flex-shrink-0">
+                        <Briefcase className="w-6 h-6 text-primary-foreground" />
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex flex-wrap items-center gap-2 mb-2">
+                          <h3 className="text-xl font-bold">{job.title}</h3>
+                          <Badge variant="outline" className="border-primary/30 text-primary">
+                            {job.period}
+                          </Badge>
+                        </div>
+                        <h4 className="text-lg text-primary mb-3">{job.company}</h4>
+                        <p className="text-muted-foreground mb-4">{job.description}</p>
+                        <div className="space-y-1">
+                          {job.achievements.map((achievement, idx) => (
+                            <div key={idx} className="flex items-center gap-2 text-sm">
+                              <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0" />
+                              <span>{achievement}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-gradient">50TB+</div>
-                    <div className="text-sm text-muted-foreground">Data Processed</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-gradient">100%</div>
-                    <div className="text-sm text-muted-foreground">Client Retention</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-gradient">DOE</div>
-                    <div className="text-sm text-muted-foreground">Certified</div>
-                  </div>
-                </div>
-              </Card>
+                </Card>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Values & Mission */}
+        {/* Education & Certifications */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-black mb-6">
-                Our <span className="text-gradient">Values</span>
-              </h2>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="glass-morphism border-primary/20 p-8 text-center">
-                <div className="gradient-primary p-4 rounded-lg w-fit mx-auto mb-6">
-                  <GraduationCap className="w-8 h-8 text-primary-foreground" />
+            <div className="grid lg:grid-cols-2 gap-12">
+              {/* Education */}
+              <div>
+                <div className="flex items-center gap-3 mb-8">
+                  <GraduationCap className="w-8 h-8 text-primary" />
+                  <h2 className="text-3xl font-bold">Education</h2>
                 </div>
-                <h3 className="text-xl font-bold mb-4">Sustainable Innovation</h3>
-                <p className="text-muted-foreground">
-                  We develop solutions that contribute to a renewable future, ensuring technology serves humanity responsibly.
-                </p>
-              </Card>
-
-              <Card className="glass-morphism border-primary/20 p-8 text-center">
-                <div className="gradient-primary p-4 rounded-lg w-fit mx-auto mb-6">
-                  <Users className="w-8 h-8 text-primary-foreground" />
+                
+                <div className="space-y-6">
+                  {education.map((edu, index) => (
+                    <Card key={index} className="glass-morphism border-primary/20 p-6">
+                      <h3 className="text-lg font-semibold mb-2">{edu.degree}</h3>
+                      <p className="text-primary mb-1">{edu.school}</p>
+                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <span>{edu.period}</span>
+                        <span>•</span>
+                        <span>{edu.status}</span>
+                      </div>
+                    </Card>
+                  ))}
                 </div>
-                <h3 className="text-xl font-bold mb-4">SMB Partnership</h3>
-                <p className="text-muted-foreground">
-                  We believe small and medium businesses are the backbone of innovation and deserve world-class technology.
-                </p>
-              </Card>
+              </div>
 
-              <Card className="glass-morphism border-primary/20 p-8 text-center">
-                <div className="gradient-primary p-4 rounded-lg w-fit mx-auto mb-6">
-                  <Award className="w-8 h-8 text-primary-foreground" />
+              {/* Certifications */}
+              <div>
+                <div className="flex items-center gap-3 mb-8">
+                  <Award className="w-8 h-8 text-primary" />
+                  <h2 className="text-3xl font-bold">Certifications</h2>
                 </div>
-                <h3 className="text-xl font-bold mb-4">Ethical Technology</h3>
-                <p className="text-muted-foreground">
-                  Transparency, responsibility, and human-centered design guide every solution we create.
-                </p>
-              </Card>
+                
+                <div className="space-y-3">
+                  {certifications.map((cert, index) => (
+                    <Card key={index} className="glass-morphism border-primary/20 p-4">
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0" />
+                        <span className="text-foreground">{cert}</span>
+                      </div>
+                    </Card>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
