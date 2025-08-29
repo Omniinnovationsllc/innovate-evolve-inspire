@@ -135,6 +135,10 @@ const Portfolio = () => {
                       <Button 
                         size="sm" 
                         className="gradient-primary text-primary-foreground"
+                        onClick={() => {
+                          const projectPages = ['/portfolio/beopt-energy-modeling', '/portfolio/easyairesume', '/portfolio/front-flats-philadelphia', '/portfolio/beach-cities-flow-analysis'];
+                          window.location.href = projectPages[index];
+                        }}
                       >
                         <ExternalLink className="w-4 h-4 mr-2" />
                         View Details
@@ -143,6 +147,10 @@ const Portfolio = () => {
                         variant="outline" 
                         size="sm"
                         className="border-primary/30 hover:border-primary"
+                        onClick={() => {
+                          const projectPages = ['/portfolio/beopt-energy-modeling', '/portfolio/easyairesume', '/portfolio/front-flats-philadelphia', '/portfolio/beach-cities-flow-analysis'];
+                          window.location.href = projectPages[index];
+                        }}
                       >
                         <Github className="w-4 h-4 mr-2" />
                         Case Study

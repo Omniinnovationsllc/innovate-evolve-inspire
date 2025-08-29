@@ -57,6 +57,7 @@ const Navigation = () => {
             <Button 
               size="sm" 
               className="gradient-primary text-primary-foreground font-semibold shadow-glow hover:scale-105 transition-all duration-300"
+              onClick={() => window.location.href = '/contact'}
             >
               Get Started
             </Button>
@@ -92,6 +93,7 @@ const Navigation = () => {
               <Button 
                 size="sm" 
                 className="w-full gradient-primary text-primary-foreground font-semibold shadow-glow mt-4"
+                onClick={() => window.location.href = '/contact'}
               >
                 Get Started
               </Button>

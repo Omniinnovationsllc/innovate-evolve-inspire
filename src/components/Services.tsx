@@ -91,6 +91,10 @@ const Services = () => {
                 <Button 
                   variant="outline" 
                   className="w-full group border-primary/30 hover:border-primary text-foreground font-semibold"
+                  onClick={() => {
+                    const servicePages = ['/services/data-analytics', '/services/web-solutions', '/services/ai-integration'];
+                    window.location.href = servicePages[index];
+                  }}
                 >
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

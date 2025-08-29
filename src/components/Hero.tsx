@@ -68,6 +68,7 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="glass-morphism border-primary/30 hover:border-primary/60 text-foreground font-semibold px-8 py-4 transition-all duration-300"
+              onClick={() => window.location.href = '/portfolio'}
             >
               View Our Work
             </Button>
